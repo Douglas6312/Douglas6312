@@ -15,7 +15,7 @@ Final year BSc Information and Knowledge Systems student with a primary major in
 * <a href="https://github.com/COS301-SE-2021/Smart-Student-Handbook">Smart Student Handbook </a> - Final year Software Engineering Capstone Industry Project
 * <a href="https://github.com/COS301-SE-2021/CrowdBook_Gamma">Crowd Book application </a> - Platform where you can buy, sell, trade and rent second hand books.  
 * <a href="https://github.com/Arno-Moller/COS214-Project">Formula 1 championship simulation</a> - COS214 Software Modeling
-* <a href=""></a>
+* <a href="https://gitlab.com/Arno-Moller/inf272-group-project">Eco-Impact</a> - Carbon Emissions Tracking Web Application
 
 # Skills
 [![](https://img.shields.io/badge/Full%20Stack%20Development-grey?style=for-the-badge)](#)
