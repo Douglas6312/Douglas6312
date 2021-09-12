@@ -2,7 +2,7 @@
 
 [<img src="https://media-exp1.licdn.com/dms/image/C5603AQF_BNn1IfdNUw/profile-displayphoto-shrink_800_800/0/1622135896141?e=1637193600&v=beta&t=dJBYM4Ff8-RkV9GwazQMPXodV-9DruNE-GlZGzk8Jq0" width="100" height="100" style="border-radius:50%">](https://www.linkedin.com/in/douglasvanreeuwyk/)
 
-[<img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-128.png" width="20" height="20">](https://www.linkedin.com/in/douglasvanreeuwyk/) douglasvanreeuwyk
+[<img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-128.png" width="20" height="20">](https://www.linkedin.com/in/douglasvanreeuwyk/) <a href="https://www.linkedin.com/in/douglasvanreeuwyk/">douglasvanreeuwyk</a>
 
 # About
 Final year BSc Information and Knowledge Systems student with a primary major in Computer Science and secondary majors in Informatics and Multimedia at the University of Pretoria. I plan on pursuing an honours in computer science part-time while working towards becoming a Software Engineer. I am a well rounded person who values the philosophy of life-long learning and personal development as well as giving back to others.
@@ -13,8 +13,9 @@ Final year BSc Information and Knowledge Systems student with a primary major in
 
 # Projects I have been involved in
 * <a href="https://github.com/COS301-SE-2021/Smart-Student-Handbook">Smart Student Handbook </a> - Final year Software Engineering Capstone Industry Project
-* <a href="https://github.com/Arno-Moller/COS214-Project">Formula 1 simulation</a> - COS214 Software Modeling
-* <a href=""></a>   
+* <a href="https://github.com/COS301-SE-2021/CrowdBook_Gamma">Crowd Book application </a> - Platform where you can buy, sell, trade and rent second hand books.  
+* <a href="https://github.com/Arno-Moller/COS214-Project">Formula 1 championship simulation</a> - COS214 Software Modeling
+* <a href=""></a>
 
 # Skills
 [![](https://img.shields.io/badge/Full%20Stack%20Development-grey?style=for-the-badge)](#)
