@@ -18,6 +18,10 @@ async function login() {
             })
             .catch(function (error) {
                 console.log(error);
+                $.alert({
+                    title: 'Alert!',
+                    content: error.message,
+                });
             });
     }
 }
@@ -56,7 +60,10 @@ async function loadCandidates(){
             }
         },
         (error) => {
-            alert("Failed to find object: " + error.message);
+            $.alert({
+                title: 'Alert!',
+                content: "Failed to find object: " + error.message,
+            });
         }
     );
 
@@ -75,7 +82,10 @@ async function castVote(candidateID){
                 let userVoted = res.attributes.election.votes.find(vote => vote.userID === user.id);
 
                 if(userVoted !== undefined){
-                    alert("User has already voted!!");
+                    $.alert({
+                        title: 'Alert!',
+                        content: "You have already voted, Only one voted allowed!",
+                    });
                 } else {
                     res.attributes.election.votes.push({
                         userID: user.id,
@@ -87,14 +97,20 @@ async function castVote(candidateID){
                             window.location.href = "voteCaptured.html";
                         },
                         (error) => {
-                            alert("Failed to create new object, with error code: " + error.message);
+                            $.alert({
+                                title: 'Alert!',
+                                content: "Failed to create new object, with error code: " + error.message,
+                            });
                         }
                     );
                 }
             }
         },
         (error) => {
-            alert("Failed to find object: " + error.message);
+            $.alert({
+                title: 'Alert!',
+                content: "Failed to find object: " + error.message,
+            });
         }
     );
 }
@@ -165,7 +181,10 @@ async function loadResultsGraph(){
             }
         },
         (error) => {
-            alert("Failed to find object: " + error.message);
+            $.alert({
+                title: 'Alert!',
+                content: "Failed to find object: " + error.message,
+            });
         }
     );
 
