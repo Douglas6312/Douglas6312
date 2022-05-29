@@ -24,6 +24,13 @@ async function login() {
                 });
             });
     }
+    else {
+        $.alert({
+            title: 'Alert!',
+            content: "User already logged in. Logging out...",
+        });
+        await Moralis.User.logOut();
+    }
 }
 
 async function logOut() {
