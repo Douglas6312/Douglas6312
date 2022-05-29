@@ -107,17 +107,21 @@ async function loadResultsGraph(){
     query.get("Ge19sfrKyE5oY8iQ5b0URvFQ").then(
         (res) => {
 
-            console.log("aaaaaaaaaaaaaaaaaaa");
-            console.log(res.attributes.election);
-
             if(res.attributes.election !== undefined){
 
                 let labels = res.attributes.election.candidates.map(candidate => candidate.name);
                 let pieData = [];
+                let winnerCandidate = "";
+                let highestVote = 0;
 
                 res.attributes.election.candidates.forEach(candidate => {
                     let numVotes = res.attributes.election.votes.filter(vote => vote.candidateID === candidate.candidateID).length;
                     pieData.push(numVotes);
+
+                    if(numVotes >= highestVote){
+                        highestVote = numVotes;
+                        winnerCandidate = candidate;
+                    }
                 });
 
                 const data = {
@@ -144,6 +148,19 @@ async function loadResultsGraph(){
                     document.getElementById('myChart'),
                     config,
                 );
+
+                let winnerCard = `<div class="col-3">
+                                        <div class="card" style="width: 18rem;">
+                                           <img class="card-img-top" src="${winnerCandidate.img}" height="400" alt="Card image cap">
+                                            <div class="card-body">
+                                               <h4 class="card-title text-center">${winnerCandidate.name}</h4>
+                                                <h3 class="text-center">Winner</h3>
+                                                <h5 class="text-center">${highestVote} votes</h5>
+                                            </div>
+                                        </div>
+                                    </div>`;
+
+                $("#winnerCard").append(winnerCard);
 
             }
         },
