@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-11">
+        <h1 class="display-3 text-center">Select Election</h1>
+      </div>
+      <div class="col-1 mt-3">
+        <button class="btn center btn-outline-dark rounded-5" id="btn-logout" onclick="logOut()"><p class="h5">Logout</p></button>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <img class="rounded mx-auto d-block img-fluid" src="img/select.png" width="300">
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Election</th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Class representative</td>
+            <td>
+              <div class="row">
+                <div class="col-6">
+                  <a class="btn btn-success" href="voting.html?vote=classRepresentative" style="width: 100%;">Vote</a>
+                </div>
+                <div class="col-6">
+                  <a class="btn btn-info" href="results.html?vote=classRepresentative" style="width: 100%;">Results</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
